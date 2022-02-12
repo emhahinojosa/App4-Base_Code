@@ -34,35 +34,35 @@ blah, blah, blah, blah
 
 
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
+        var workout_count = 0;
+        var rest_count = 0;
 	var total = 4;
 
 
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
-		alert(allergy_count);
+        function restAdd(){
+            rest_count = rest_count + 1;
+		alert(rest_count);
 
         }
 
-        function coldAdd(){
-            cold_count = cold_count + 1;
-		alert(cold_count);
+        function workoutAdd(){
+           workout_count = workout_count + 1;
+		alert(workout_count);
         }
 
-	function allergyPercent(){
-		allergyPercent=(allergy_count / 4) *100;
+	function restPercent(){
+		restPercent=(rest_count / 4) *100;
 	}
 	
 
-	function coldPercent(){
-		coldPercent=(cold_count / 4) *100;
+	function workoutPercent(){
+		workoutPercent=(workout_count / 4) *100;
 	}
 	function showResults(){
-		coldPercent();
-		allergyPercent();
+		workoutPercent();
+		restPercent();
 		var resultText = document.getElementById("results");
-		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
+		resultText.innerHTML = "Probability to rest =" + restPercent + "<br> Probability to workout again =" + workoutPercent; 
 	}
   </script>
 
@@ -72,9 +72,7 @@ blah, blah, blah, blah
 	<html>
 <body>
 
-<h2> Muscle soreness – we’ve all experienced it here and there. </h2>
 
-<img src="https://vintank.com/wp-content/uploads/2021/01/Muscle-Soreness.jpg" alt="W3Schools.com" style="max-height;height:741px;">
 
 </body>
 </html>
@@ -97,6 +95,11 @@ blah, blah, blah, blah
   .page:target {
     left: 0vw;
     z-index: 1;
+	  
+	  <h2> Muscle soreness – we’ve all experienced it here and there. </h2>
+
+<img src="https://vintank.com/wp-content/uploads/2021/01/Muscle-Soreness.jpg" alt="W3Schools.com" style="max-height;height:741px;">
+	  
 }
 </style>
 
@@ -122,8 +125,8 @@ blah, blah, blah, blah
 	</div>
 	<div id="content" class="w3-container">
 	<p>Did you workout?</p>   
-	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+	<a href="#two"  onclick="restAdd();" class="w3-btn w3-black"> Yes</a>
+         	<a href="#two"  onclick="workoutAdd();" class="w3-btn w3-black">No</a>
 		
 	</div>
 </div>
@@ -134,8 +137,8 @@ blah, blah, blah, blah
 	</div>
 	 <div id="content" class="w3-container">
 	<p>Do you have severe pain?</p>    
-	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+	<a href="#three"  onclick="restAdd();" class="w3-btn w3-black"> Yes</a>
+         	<a href="#three"  onclick="workoutAdd();" class="w3-btn w3-black">No</a>
 	
 </div>
 	</div>
@@ -146,8 +149,8 @@ blah, blah, blah, blah
 	 </div>
 	 <div id="content" class="w3-container">
 	<p>Do you have stiffness and swelling? </p>    
-	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+	<a href="#four"  onclick="restAdd();" class="w3-btn w3-black"> Yes</a>
+         	<a href="#four"  onclick="workoutAdd();" class="w3-btn w3-black">No</a>
 
 	 </div>
 	 </div>
@@ -158,8 +161,8 @@ blah, blah, blah, blah
 	 </div>
 	 <div id="content" class="w3-container">
 	<p>Do you have difficulty walking or raising your arms?</p>    
-	<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+	<a href="#five"  onclick="restAdd();" class="w3-btn w3-black"> Yes</a>
+         	<a href="#five"  onclick="workoutAdd();" class="w3-btn w3-black">No</a>
 	 
 	 
  </div><!-- /content -->
